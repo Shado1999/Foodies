@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Music Selection Popup Script</title>
+<meta charset="UTF-8">
+
+<style type="text/css">
+
+body 	{
+	margin: 0;
+	padding: 0;
+	border: #FFFFFF 0px solid;
+	}
+
+
+a:link		{ color: #6633FF; text-decoration: none; }
+
+a:visited	{ color: #6633FF; text-decoration: none; }
+
+a:active	{ color: #999900; text-decoration: none; }
+
+a:hover		{ color: #669900; text-decoration: none; }
+
+a:link.homelink		{ color: #FFFFFF; font: 12px arial, sans-serif; font-weight: bold; font-style: italic; }
+
+a:visited.homelink	{ color: #FFFFFF; font: 12px arial, sans-serif; font-weight: bold; font-style: italic; }
+
+table 		{ color: #333333; font: 13px arial, sans-serif; font-weight: normal; }
+
+.hilite		{ color: #990000; font-weight: bold; }
+
+.title 		{ color: #000000; font: 15px arial, sans-serif; font-weight: bold; }
+
+.largetitle	{ color: #000000; font: 20px arial, sans-serif; font-weight: normal; }
+
+.subtitle 	{ color: #000000; font: 14px arial, sans-serif; font-weight: bold; }
+
+.alogo		{ color: #FFFFFF; font: 14px arial, sans-serif; font-weight: bold; font-style: italic; }
+
+.header		{ background-color: #1D59EB; border-bottom: #000000 1px solid; width: 100%; }
+
+table.header td	{ padding: 20px; }
+
+.maintable	{ width: 750px; }
+
+.maintableleft	{ width: 150px; padding: 8px; }
+
+.maintableright	{ padding: 8px; }
+
+table, tr, td	 { border-collapse:collapse; border-spacing: 0; margin: 0; padding: 0; border: 0; }
+
+.center-div	 { margin-left: auto; margin-right: auto; }
+
+.centeralign	 { vertical-align: top; text-align: center; }
+
+.leftalign	 { vertical-align: top; text-align: left; }
+
+.rightalign	 { vertical-align: middle; text-align: right; }
+
+img		 { border: 0; }
+
+
+
+.selectcopy {
+color: #006A6A;
+background-color: #D8FEFA;
+border: 1px solid #009999;
+width: 225px;
+font: 11px verdana, arial, sans-serif;
+font-weight: normal;
+margin-bottom: 4px; }
+.textareacode {
+font: 11px arial, sans-serif;
+text-align: left;
+WIDTH: 550px;
+background-color:#F0F0F0;
+BORDER: #000000 1px solid; }
+
+</style>
+
+
+
+<script type="text/javascript">
+<!--
+function copyit(theField) {
+var tempval=eval("document."+theField)
+tempval.focus()
+tempval.select()
+therange=tempval.createTextRange()
+therange.execCommand("Copy")
+}
+//-- END -->
+</script>
+
+
+
+<script type="text/javascript" src="pop-up-music.js"></script>
+
+
+
+</head>
+
+<body>
+
+<table class="header"><tr><td class="leftalign">
+<a href="http://allwebcodesign.com/" class="homelink"><span class="alogo">Allwebco Design Corporation - Add-On</span></a><br>
+</td><td class="rightalign">
+<a href="http://allwebcodesign.com/" class="homelink">Home</a><br>
+</td></tr></table>
+
+
+<script type="text/javascript" src="http://allwebcodesign.com/setup/templatehelptop.js"></script>
+
+
+<br><br>
+
+<!-- MAIN TABLE -->
+<table class="center-div maintable"><tr><td class="leftalign maintableleft">
+
+<br>
+
+[ <a href="javascript:popmusic('music.html')">Open Music Popup</a> ]<br>
+
+[ <a href="music.html">Main Music Page</a> ]<br>
+
+[ <a href="music_frame-1.html">Frame 1</a> ]<br>
+
+[ <a href="music_frame-2.html">Frame 2</a> ]<br>
+
+[ <a href="music_frame-3.html">Frame 3</a> ]<br>
+
+<br>
+
+[ <a href="http://allwebcodesign.com">Allwebco Design</a> ]<br>
+
+[ <a href="http://allwebco.com">Allwebco Hosting</a> ]<br>
+
+<br><br>
+
+<script type="text/javascript" src="http://allwebcodesign.com/setup/templatehelp.js"></script>
+
+<br>
+
+</td><td class="leftalign maintableright">
+
+
+<span class="largetitle">Music Popup Add-on Setup<br></span>
+This script is provided free for any type of website project. Support is not included.
+
+
+<br><br>
+
+<!-- SAMPLE POP LINK -->
+
+
+[ <a href="javascript:popmusic('music.html')">Open Music Popup</a> ]
+
+<br><br>
+
+<a href="http://www.allwebco-templates.com/support/S_scripts_music_pop-up.htm">View support for this addon</a>
+
+<br><br>
+
+Music provided by <a href="http://square-peach.com/">Square Peach Music</a><br>
+
+<br><br>
+
+<span class="title">STEP #1: Create Folder</span><br>
+Create a new folder in your main template folder and name this folder "music-pop" all lowercase.
+
+<br><br><br>
+
+<span class="title">STEP #2: Copy Files</span><br>
+Copy all the files from this zip file into the new "music-pop" folder.
+
+<br><br><br>
+
+<span class="title">STEP #3: (OPTION A)</span><br>
+Paste the following code into the "head" of your existing webpage that you want the popup on. Put the code just before the &lt;/head&gt; near the top of the page. Make backups of your webpages before you start.
+
+<br><br>
+
+<form name="selecting1" style="margin: 0px;">
+<input onclick="copyit('selecting1.copyselect1')" type="button" value="Click to select all (also copies in IE)" name="copybutton" class="selectcopy"><br>
+<textarea name="copyselect1" rows="2" cols="55" wrap="soft" class="textareacode">
+&lt;script type="text/javascript" src="music-pop/pop-up-music.js"&gt;&lt;/script&gt;
+</textarea>
+</form>
+
+<br><br>
+
+<span class="title">STEP #3: (OPTION B)</span><br>
+Instead of adding the above to each HTML page, you can instead add the following script to one of your global .js files that's used in the &lt;/head&gt; section of your webpages like the "javascripts.js" or "pop-closeup.js". If you use this option test your menus and other webpage scripts after you add this script.
+
+<br><br>
+
+<form name="selecting2" style="margin: 0px;">
+<input onclick="copyit('selecting2.copyselect2')" type="button" value="Click to select all (also copies in IE)" name="copybutton" class="selectcopy"><br>
+<textarea name="copyselect2" rows="10" cols="55" wrap="soft" class="textareacode">
+function popmusic(URL) {
+var popup_width = 400
+var popup_height = 220
+day = new Date();
+id = day.getTime();
+eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,left = 100,top = 100,width='+popup_width+',height='+popup_height+'');");
+}
+</textarea>
+</form>
+
+<br><br>
+
+<span class="title">STEP #4: (OPTION A)</span><br>
+Adding links to open the popup.
+
+<br><br>
+
+<b>HTML page link:</b> Paste the following in the main body of your HTML webpage:
+
+<br><br>
+
+<span class="hilite">&lt;a href="javascript:popmusic('music-pop/music.html')"&gt;Play Music&lt;/a&gt;&lt;br&gt;</span>
+
+<br><br>
+
+<b>Link for a menu.js:</b> Add the following in place of the .html part of a menu link. For example, replace "about.htm" with the following code:
+
+<br><br>
+
+<span class="hilite">javascript:popmusic(\'music-pop/music.html\')</span>
+
+
+<br><br>
+
+If the above does not work, you may need to use the following code in your menu.js:
+
+<br><br>
+
+<span class="hilite">javascript:popmusic('music-pop/music.html')</span>
+
+<br><br>
+
+...or try this code:
+
+<br><br>
+
+<span class="hilite">javascript:popmusic(\"music-pop/music.html\")</span>
+
+
+<br><br>
+
+
+<b>Link for the sidebar:</b> Add the following to your sidebar.js. You may need to <a href="http://www.allwebco-templates.com/support/S_link_classes.htm">create a new class for the link colors.</a>
+
+<br><br>
+
+<span class="hilite">document.write('&lt;a href="javascript:popmusic(\'music-pop/music.html\')"&gt;Play Music&lt;/a&gt;&lt;br&gt;');</span>
+
+<br><br>
+
+<br><br>
+
+<span class="title">STEP #4: (OPTION B)</span><br>
+For an automatic popup. Select, copy, and paste the following code to the body tag in any HTML page that you want the music popup to open with automatically.
+
+<br><br>
+
+<span class="hilite"> onload="popmusic('music-pop/music.html')"</span>
+
+<br><br>
+
+<b>EXAMPLE:</b> It will go in the "body" tag like the following:
+
+<br><br>
+
+
+&lt;body <span class="hilite">onload="popmusic('music-pop/music.html')"</span>&gt;
+
+<br><br><br>
+
+<span class="title">STEP #5: Replace Music</span><br>
+
+Because some browsers can not play mp3 files, you'll need to replace both the mp3 and ogg files included in this download in the "music-pop" folder.
+
+<br><br>
+
+You can optionally edit any one of the 3 "music_frame-?.html" HTML pages that you placed in the "music-pop" folder with different music file names. Edit the "music-?.mp3" code in 3 places and the "music-?.ogg" in 1 place in each "music_frame-?.html" page.
+
+<br><br><br>
+
+<span class="title">TROUBLESHOOTING:</span><br>
+
+<ol>
+
+<li> If you added the step #3B script to the "javascripts.js", make sure each page has this code near the top &lt;script language="JavaScript" type="text/javascript" src="javascripts.js"&gt;&lt;/script&gt; The same applies to any .js file you added the script to. It must be near the top of each HTML page.
+
+<li> If the popup is a missing page see <a href="http://www.allwebco-templates.com/support/S_missing_parts.htm">missing website areas</a>.
+
+<li> If the music is not playing see <a href="http://www.allwebco-templates.com/support/S_sound_notworking.htm">sound not working support</a>.
+
+<li> If the music does not play, or plays the wrong music, after editing one of the "music_frame-?.html" pages: Make sure you edited the sound file mp3 name in 3 places and ogg in 1 place, and double check your filenames and HTML code.
+
+<li> <a href="http://www.allwebco-templates.com/support/S_scripts_music_pop-up.htm">Download the add-on again and try again from the start.</a>
+
+</ol>
+
+<br>
+
+<span class="title">OPTIONS:</span><br>
+
+<br>
+
+<b>BUTTON WIDTH AND FONT COLORS:</b><br>
+Edit the "music.css" in your "music-pop" folder to change text or button colors or to set the width of the music popup buttons. <a href="http://www.allwebco-templates.com/support/S_colors_standard.htm">Click for color choices.</a>
+
+<br><br>
+
+<b>ADDING MORE SONGS:</b><br>
+The "music.html" is the main music page. Each song has it's own HTML page that the "music.html" is displaying inside of an <a href="http://www.allwebco-templates.com/support/S_script_IFrame.htm">IFrame</a>. To add a new song to the player:
+
+<ol>
+
+<li>Make a copy of the "music_frame-1.html". Rename this to "music_frame-4.html".
+
+<li>Edit the new "music_frame-4.html" and change the "music-1.mp3" code in 3 places and "music-1.ogg" in one place to "music-4".
+
+<li>Place this new music .mid, .mp3, .au or .wav file in the template "music" folder.
+
+<li>Edit the "music_frame-4.html" and change the song title.
+
+<li>Edit the "music.html" and find the "START PLAY MENU". Copy the 2 lines that make a link and paste them under one of these links. Edit the HTML page name with your new "music_frame-4.html" link.
+
+</ol>
+
+<br>
+
+<b>BUTTON NAMES:</b><br>
+Edit the "music.html" to change the popup button names.
+
+<br><br>
+
+<b>SONG TITLES:</b><br>
+Edit each "music_frame-?.html" to change the text song title names. It may be hard to view the text in these pages because they use a transparent background. Edit the source code.
+
+<br><br>
+
+
+<b>THE MUSIC PLAYERS:</b><br>
+The actual player code will be found in the 3 "music_frame-?.html" pages. You can edit some of the options such as the height and width of the player, border colors and other items in these 3 pages. Some of the styles are also in the "music.css".
+
+<br><br>
+
+<b>VIDEO:</b><br>
+You can use these players for video. This will involve editing the code in the "music_frame-?.html" pages. We suggest <a href="http://google.com">searching at Google</a> for "embed object video" for more info on the options available, or you can use YouTube embed code.
+
+<br><br>
+
+<b>POPUP SIZE:</b><br>
+The size of the popup can be edited in the "pop-up-music.js" or in the code you added in step #3B above. Currently this is set to 400 x 220 pixels.
+
+
+<br><br><br>
+
+
+
+
+<br><br><br>
+Best of luck with your new add-on and your website!<br>
+~Allwebco Design~<br>
+
+<br><br>
+
+Sound clips &copy; <a href="http://square-peach.com/" target="_blank">Square Peach Music</a><br>
+
+<br><br><br><br><br><br>
+
+<span class="copyright">
+COPYRIGHT &copy; Allwebco Design Corporation | <a href="http://www.allwebco-templates.com/support/terms-of-use.htm">Terms of Use</a><br>
+Unauthorized use or sale of this script, images or any files included in this download is strictly prohibited by law. By downloading this script you are authorized to use this on any website, business or personal. You are also authorized to modify all included files for this use.
+
+<br><br>
+
+Purchaser is authorized to use any and all files included in the download on any type of website project.
+
+<br><br>
+
+</span>
+
+
+
+
+
+</td></tr></table>
+<!-- MAIN TABLE -->
+
+
+<br>
+
+
+
+
+
+
+</body></html>

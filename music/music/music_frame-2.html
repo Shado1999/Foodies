@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<title>Music</title>
+
+<meta charset="UTF-8">
+
+<link rel="StyleSheet" href="music.css" type="text/css">
+
+<!--[if IE]>
+<style type="text/css">
+.audioframe		{ background-color: #000000; }
+</style>
+<![endif]-->
+
+</head>
+<body class="background-frame">
+
+<!-- OUTER TABLE -->
+<table style="width:100%;"><tr><td style="text-align:center;">
+
+
+PLAYING: Racetrack / <a href="http://square-peach.com/" target="_blank">Square Peach Music</a><br>
+
+
+</td></tr><tr><td style="text-align:center;">
+
+
+
+<!-- BE SURE TO EDIT THE .mp3 SONG NAME IN 2 PLACES -->
+
+
+
+<span class="audioframe centerme">
+<audio autoplay controls="controls" class="HTML5playerwidth">
+
+<source src="music-2.mp3" type="audio/mpeg">
+<source src="music-2.ogg" type="audio/ogg">
+
+<object id="MediaPlayer1" width="300" height="45" classid="CLSID:22D6F312-B0F6-11D0-94AB-0080C74C7E95"
+codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=6,0,02,902"
+standby="Loading Microsoft Windows Media Player..." type="application/x-oleobject">
+<param name="FileName" value="music-2.mp3">
+<param name="animationatStart" value="false">
+<param name="transparentatStart" value="true">
+<param name="autoStart" value="true">
+<param name="showControls" value="true">
+<embed type="application/x-mplayer2" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/" name="MediaPlayer" src="music-2.mp3" autostart="true" showstatusbar="1" height="50" width="300"></embed></object></audio></span>
+
+
+
+</td></tr></table>
+</body></html>

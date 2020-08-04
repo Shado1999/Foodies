@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+#mylist{ font-size:20px; width:250px; padding:5px; }
+</style>
+<script>
+function initAudio(){
+	var audio, dir, ext, mylist;
+	dir = "music/";
+	ext = ".mp3";
+	// Audio Object
+	audio = new Audio();
+	audio.src = dir+"1"+ext;
+	audio.play();
+	// Event Handling
+	mylist = document.getElementById("mylist");
+	mylist.addEventListener("change", changeTrack);
+	// Functions
+	function changeTrack(event){
+		audio.src = dir+event.target.value+ext;
+	    audio.play();
+	}
+}
+window.addEventListener("load", initAudio);
+</script>
+</head>
+<body>
+<select id="mylist" size="4">
+  <option value="1">adm</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+</body>
+</html>

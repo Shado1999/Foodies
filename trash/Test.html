@@ -1,0 +1,44 @@
+<html>
+<body>
+<h1>Hello</h1>
+	
+		<script>
+function initAudio(){
+	var audio, dir, ext, mylist;
+	dir = "music/";
+	ext = ".mp3";
+	// Audio Object
+	audio = new Audio();
+	audio.src = dir+"1"+ext;
+	audio.play();
+	// Event Handling
+	mylist = document.getElementById("mylist");
+	mylist.addEventListener("change", changeTrack);
+	// Functions
+	function changeTrack(event){
+		audio.src = dir+event.target.value+ext;
+	    audio.play();
+	}
+}
+window.addEventListener("load", initAudio);
+</script>
+</head>
+<body>
+Select song:<select name "songs" id="mylist" size="12">
+
+  <option value="1">Ae Dil Hai Mushkil</option>
+  <option value="2">Channa Mereya</option>
+  <option value="3">Hawayein</option>
+  <option value="4">Humsafar</option>
+  <option value="5">Kaun Tuze</option>
+  <option value="6">Lambiyaan Si </option>
+  <option value="7">Main Agar</option>
+  <option value="8">Main Rahoon </option>
+  <option value="9">Mere Rashke Kamar</option>
+  <option value="10">Phir Bhi Tumko Chahunga</option>
+  <option value="11">Sanam Re</option>
+    <option value="12">Zaalima</option>
+</select>
+
+</body>
+</html>
